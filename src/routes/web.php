@@ -18,3 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/user', 'UserController@index');
+//自由課題
+Route::get('/douda', 'UserController@douda');
+//入力フォーム
+Route::get('/bbs', 'BbsController@index');
+Route::post('/bbs', 'BbsController@create');
+
